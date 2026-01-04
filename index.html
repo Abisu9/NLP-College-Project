@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analyzer | Student Project</title>
+
+    <!-- CSS file (same folder) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts (online, OK) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sentiment Analyzer</h1>
+            <p class="subtitle">Understand the emotion behind your words</p>
+        </header>
+
+        <main>
+            <div class="card">
+                <div class="input-group">
+                    <label for="opinionInput">Enter your opinion:</label>
+                    <textarea id="opinionInput" placeholder="How do you feel about this today?..."></textarea>
+                </div>
+
+                <div class="actions">
+                    <button id="submitBtn" class="btn-primary">Analyze Sentiment</button>
+                    <button id="clearBtn" class="btn-secondary">Clear</button>
+                </div>
+
+                <div id="resultSection" class="result-section hidden">
+                    <hr>
+                    <p class="result-label">Analysis Result:</p>
+                    <div id="sentimentDisplay" class="sentiment-badge">
+                        <span id="sentimentText">Neutral</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Developed by: <strong>Abishek Acharya, PU</strong></p>
+        </footer>
+    </div>
+
+    <!-- JavaScript file (same folder) -->
+    <script src="script.js"></script>
+</body>
+</html>
